@@ -1,0 +1,30 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
