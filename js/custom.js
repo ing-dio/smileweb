@@ -29,7 +29,7 @@ async function fetchData() {
 
 async function getRandomContent() {
   const SQL = await initSqlJs({ locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${file}` });
-  const response = await fetch('/db/data.db');
+  const response = await fetch('./db/data.db');
   const arrayBuffer = await response.arrayBuffer();
   const Uint8ArrayData = new Uint8Array(arrayBuffer);
   const db = new SQL.Database(Uint8ArrayData);
